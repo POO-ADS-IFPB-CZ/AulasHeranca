@@ -1,13 +1,11 @@
-public class Professor extends Pessoa{
+public class Professor extends Funcionario{
     private String formacao;
     private String tipoVinculo;
-    private double salario;
 
     public Professor(String cpf, String nome, int matricula, String endereco, String formacao, String tipoVinculo, double salario) {
-        super(cpf, nome, matricula, endereco);
+        super(cpf, nome, matricula, endereco, salario);
         this.formacao = formacao;
         this.tipoVinculo = tipoVinculo;
-        this.salario = salario;
     }
 
     public String getFormacao() {
@@ -26,11 +24,4 @@ public class Professor extends Pessoa{
         this.tipoVinculo = tipoVinculo;
     }
 
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
 }
