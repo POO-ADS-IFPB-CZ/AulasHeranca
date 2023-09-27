@@ -8,6 +8,26 @@ public class Professor extends Funcionario{
         this.tipoVinculo = tipoVinculo;
     }
 
+    @Override
+    public double getSalario(){
+        double gratificacao;
+
+        if(formacao.equals("Graduação")){
+            gratificacao = 0;
+        }else if(formacao.equals("Especialização")){
+            gratificacao = 500;
+        }else if(formacao.equals("Mestrado")){
+            gratificacao = 1000;
+        }else if(formacao.equals("Doutorado")){
+            gratificacao = 2000;
+        }else{
+            gratificacao = 0;
+        }
+
+        return super.getSalario()+gratificacao;
+
+    }
+
     public String getFormacao() {
         return formacao;
     }

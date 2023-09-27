@@ -8,6 +8,15 @@ public class TecnicoAdministrativo extends Funcionario {
         this.cargo = cargo;
     }
 
+    @Override
+    public double getSalario(){
+        if(cargo.equals("Coordenador")){
+            return super.getSalario()+1000;
+        }else{
+            return super.getSalario();
+        }
+    }
+
     public String getSetor() {
         return setor;
     }
