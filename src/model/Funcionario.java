@@ -1,6 +1,8 @@
+package model;
+
 public abstract class Funcionario extends Pessoa{
 
-    private double salario;
+    protected double salario;
 
     public Funcionario(String cpf, String nome, int matricula, String endereco,
                        double salario){

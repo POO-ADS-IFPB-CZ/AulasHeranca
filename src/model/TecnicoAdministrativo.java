@@ -1,3 +1,5 @@
+package model;
+
 public class TecnicoAdministrativo extends Funcionario {
     private String setor;
     private String cargo;
@@ -11,9 +13,9 @@ public class TecnicoAdministrativo extends Funcionario {
     @Override
     public double getSalario(){
         if(cargo.equals("Coordenador")){
-            return super.getSalario()+1000;
+            return salario+1000;
         }else{
-            return super.getSalario();
+            return salario;
         }
     }
 

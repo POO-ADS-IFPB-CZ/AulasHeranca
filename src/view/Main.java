@@ -1,3 +1,8 @@
+package view;
+
+import model.Professor;
+import model.TecnicoAdministrativo;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,6 +18,7 @@ public class Main {
         System.out.println(professora.getSalario());
 
         System.out.println(tecnico.getSalario());
+
 
     }
 }

@@ -1,3 +1,5 @@
+package model;
+
 public class Professor extends Funcionario{
     private String formacao;
     private String tipoVinculo;
@@ -24,7 +26,7 @@ public class Professor extends Funcionario{
             gratificacao = 0;
         }
 
-        return super.getSalario()+gratificacao;
+        return salario+gratificacao;
 
     }
 
